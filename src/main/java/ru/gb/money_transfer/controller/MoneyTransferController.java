@@ -1,6 +1,7 @@
 package ru.gb.money_transfer.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,6 +10,7 @@ import ru.gb.money_transfer.model.MoneyTransfer;
 import ru.gb.money_transfer.service.MoneyTransferService;
 
 @RestController
+@CrossOrigin(origins = {"http://localhost:3000"})
 public class MoneyTransferController {
     private final Logger logger = Logger.getLog();
     private final MoneyTransferService service;
