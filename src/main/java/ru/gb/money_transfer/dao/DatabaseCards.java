@@ -29,7 +29,7 @@ public class DatabaseCards {
 
     private void addCard(Properties properties){
         String cardCounter = properties.getProperty("NUMBER_REG_CARDHOLDER");
-        for (int i = 1; i < Integer.parseInt(cardCounter); i++) {
+        for (int i = 1; i <= Integer.parseInt(cardCounter); i++) {
             listCards.put(properties.getProperty("CARD_NUMBER_" + i), new Card(
                     properties.getProperty("CARD_NUMBER_" + i),
                     properties.getProperty("CARD_VALID_TILL_" + i),
