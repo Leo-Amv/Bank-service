@@ -15,4 +15,12 @@ public class MoneyTransfer {
     // сумма и валюта перевода
     private Amount amount;
 
+    public MoneyTransfer(String cardFromNumber, String cardFromValidTill, String cardFromCVV, String cardToNumber, int value, String currency) {
+        this.cardFromNumber = cardFromNumber;
+        this.cardFromValidTill = cardFromValidTill;
+        this.cardFromCVV = cardFromCVV;
+        this.cardToNumber = cardToNumber;
+        amount = new Amount(value, currency);
+    }
+
 }

@@ -8,4 +8,8 @@ public class Amount {
     private int value;
     // валюта, в которой осуществляется перевод
     private String currency;
+    public Amount(int value, String currency) {
+        this.value = value;
+        this.currency = currency;
+    }
 }

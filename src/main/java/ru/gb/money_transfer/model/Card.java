@@ -10,4 +10,12 @@ public class Card {
     private final int account;
     private final String currency;
 
+    public Card(String cardNumber, String cardValid, String cardCVV, int account, String currency) {
+        this.cardNumber = cardNumber;
+        this.cardValid = cardValid;
+        this.cardCVV = cardCVV;
+        this.account = account;
+        this.currency = currency;
+    }
+
 }
