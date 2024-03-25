@@ -57,9 +57,11 @@ public class CardRepository {
         if (code.equals(confirmationCode)) {
             logger.log("Код потверждения операции введен верно");
             return "operationId: " + operationId + " is completed";
+        }else {
+            logger.log("Код потверждения операции введен НЕ верно!!!");
+            return null;
         }
-        logger.log("Код потверждения операции введен НЕ верно!!!");
-        return null;
+
     }
 
 
