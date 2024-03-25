@@ -55,6 +55,7 @@ REST-сервис предоставляет интерфейс для пере�
 ## Изначальные тестовые данные карт в файле [application.properties](https://github.com/Leo-Amv/Bank-service/blob/main/src/main/resources/application.properties)
 
 ## Проверка
+http://localhost:3030
 - Протестировать приложение с помощью curl/postman
 
 POST request --> http://localhost:8080/transfer
