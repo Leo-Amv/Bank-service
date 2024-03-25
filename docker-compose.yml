@@ -1,0 +1,16 @@
+version: '1.0'
+
+services:
+  frontend:
+    container_name: transfer_service_frontend
+    build: ./frontend
+    image: 'transfer_service_frontend:latest'
+    ports:
+      - '3000:3000'
+
+  backend:
+    container_name: transfer_service_backend
+    build: ./
+    image: 'transfer_service_backend:latest'
+    ports:
+      - '8080:8080'
