@@ -49,7 +49,7 @@ REST-сервис предоставляет интерфейс для пере�
 - Запускаем контейнер из нашего образа: `docker run --rm -p 8080:8080 -it transfer_service_backend:latest`
 
 ### Вариант 2 с помощью файла docker-compose.yml
-- Черезтерминал собираем jar архив с spring boot приложением: `./mvn clean package`
+- Через терминал собираем jar архив с spring boot приложением: `./mvn clean package`
 - в терминале выполнить команду: `docker-compose up`
 
 ## Изначальные тестовые данные карт в файле [application.properties](https://github.com/Leo-Amv/Bank-service/blob/main/src/main/resources/application.properties)
